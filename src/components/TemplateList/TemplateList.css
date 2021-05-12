@@ -1,0 +1,6 @@
+th {
+  border: 1px solid black;
+}
+.tablebody th {
+  font-weight: lighter;
+}

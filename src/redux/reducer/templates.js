@@ -4,7 +4,7 @@ const initialState = {
 
 const templates = (state = initialState, action) => {
   switch (action.type) {
-    case 'SET_TEMPLATES':
+    case 'GET_TEMPLATES':
       return {
         ...state,
         items: action.payload,

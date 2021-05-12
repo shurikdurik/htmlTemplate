@@ -1,6 +1,11 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchTemplates } from '../redux/action/templates';
+import { fetchTemplates } from '../../redux/action/templates';
+import { onTemplate } from '../../redux/action/editTemplate';
+
+import './TemplateList.css';
 
 function TemplateList() {
   const dispatch = useDispatch();
@@ -10,22 +15,28 @@ function TemplateList() {
     dispatch(fetchTemplates());
   }, []);
 
+  const handleTemplate = (item) => {
+    dispatch(onTemplate(item));
+  };
+
   return (
     <div>
       <table>
-        <thead>
+        <thead className="tablehead">
           <tr>
             <th>Template Name</th>
             <th>Last Change</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="tablebody">
           {items &&
             items.map((item) => {
               return (
                 <tr key={item.id}>
-                  <th>{item.name}</th>
-                  <th>{item.modified}</th>
+                  <th onClick={() => handleTemplate(item)}>
+                    <Link to={`/edit`}>{item.name}</Link>
+                  </th>
+                  <th>{new Date(item.modified).toDateString()}</th>
                 </tr>
               );
             })}

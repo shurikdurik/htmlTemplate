@@ -1,12 +1,14 @@
 import React from 'react';
-import { TemplateList } from './components';
+import { Route } from 'react-router';
+import { EditTemplate, TemplateList } from './components';
 
 import './App.css';
 
 function App() {
   return (
     <>
-      <TemplateList />
+      <Route exact path={'/'} component={TemplateList} />
+      <Route exact path={'/edit'} component={EditTemplate} />
     </>
   );
 }
