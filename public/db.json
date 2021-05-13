@@ -1,21 +1,22 @@
 {
-  "templates":  [{
+  "templates": [
+    {
       "id": 1,
       "name": "One",
-      "template": "<div class='template'><div class='editable'>One</div><div class='container'><div class='editable'>Two</div><div class='editable'>Three</div></div></div>",
-      "modified": 1516008350380
+      "template": "<div class=\"template\"><div class=\"editable\" style=\"font-size: 19px;\">Oneerwerrtrt</div><div class=\"container\"><div class=\"editable\" style=\"font-size: 19px;\">twoвв</div><div class=\"editable\" style=\"font-size: 19px;\">Threedgfdgd</div></div></div>",
+      "modified": "2021-05-13T07:25:07.827Z"
     },
     {
       "id": 2,
       "name": "Two",
-      "template": "<div class='template'><div class='container'><div class='editable'>One</div><div class='editable'>Two</div><div class='editable'>Three</div></div><div class='editable'>Four</div></div>",        
-      "modified": 1516008489616
+      "template": "<div class=\"template\"><div class=\"container\"><div class=\"editable\">Onee</div><div class=\"editable\">Two</div><div class=\"editable\" style=\"font-size: 10px;\">rweThreewrwrw</div></div><div class=\"editable\">Four</div></div>",
+      "modified": "2021-05-13T07:14:21.260Z"
     },
     {
       "id": 3,
       "name": "Three",
-      "template": "<div class='template'><div class='editable'>one</div><div class='editable'>two</div><div class='editable'>three</div></div>",
-      "modified": 1516008564742
+      "template": "<div class=\"template\"><div class=\"editable\">One</div><div class=\"container\"><div class=\"editable\">dfdTwofd</div><div class=\"editable\">Threeewrw</div></div></div>",
+      "modified": "2021-05-13T07:21:14.708Z"
     }
   ]
 }

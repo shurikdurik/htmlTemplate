@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router';
-import { EditTemplate, TemplateList } from './components';
+import { EditTemplate, TemplateList } from './pages';
 
 import './App.css';
 

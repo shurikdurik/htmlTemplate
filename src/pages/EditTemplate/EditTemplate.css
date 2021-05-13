@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+}
+
+.editable {
+  border: 1px solid black;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.inputs {
+  margin-top: 20px;
+  text-align: center;
+}
